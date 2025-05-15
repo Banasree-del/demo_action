@@ -1,0 +1,10 @@
+name:Checkout Demo
+on:[push]
+jobs:
+  checkout-job:
+    run on: ubantu-latest
+steps:
+ -name: Checkout Code
+  users:action/checkout@v4
+ -name:display current dictionary files
+  run: Is -La
